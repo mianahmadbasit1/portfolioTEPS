@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  background-color: rgba(2, 49, 48, 0.945);
+  height: 80px;
+}
+
+.logo img {
+  width: 80px;
+  animation: logo 1s cubic-bezier(1, 0.02, 0, 0.99) 0s infinite alternate;
+}
+
+@keyframes logo {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}
+body {
+  height: 125vh;
+  background-image: url("https://i.pinimg.com/564x/22/0d/bf/220dbf930ed85073cb94f621baaa6c7b.jpg");
+  background-size: cover;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 80px;
+  padding: 30px;
+}
+
+.topnav {
+  background-color: rgba(2, 49, 48, 0.945);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.topnav * {
+  text-decoration: none;
+  display: inline;
+  color: aliceblue;
+}
+.option-list {
+  nav-left: auto;
+}
+.option-clickable {
+  margin: 20px;
+}
+.column {
+  width: 90%;
+  height: 100px;
+  position: relative;
+  animation-duration: 4s;
+  animation-direction: reverse;
+  animation-name: column;
+}
+@keyframes column {
+  0% {
+    left: 0px;
+    top: 0px;
+    text-shadow: 0 0 20px red;
+    color: black;
+  }
+  25% {
+    left: 200px;
+    top: 0px;
+    text-shadow: 0 0 20px green;
+    color: wheat;
+  }
+  50% {
+    left: 200px;
+    top: 200px;
+    text-shadow: 0 0 20px red;
+    color: black;
+  }
+  75% {
+    left: 0px;
+    top: 200px;
+    text-shadow: 0 0 20px yellowgreen;
+    color: blue;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    text-shadow: 0 0 20px red;
+    color: black;
+  }
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btn {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  width: 100px;
+  color: black;
+  border-style: double;
+  border-color: red;
+  border-radius: 20px;
+}
+.btn:hover {
+  color: whitesmoke;
+  background-color: rgb(56, 4, 56);
+  font-size: large;
+}
+#cen {
+  text-align: center;
+}
