@@ -32,4 +32,4 @@ jobs:
         run:  npm install --global surge
       # deploy app to surge 
       - name: deploy project on surge
-        run: surge ./ home/ahmad/Desktop/portfolio/tepssoftware_park.surge.sh --token ${{ secrets.PORTFOLIO_TEPS }} 
+        run: surge ./ portfolio/tepssoftware_park.surge.sh --token ${{ secrets.PORTFOLIO_TEPS }} 
